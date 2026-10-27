@@ -2,7 +2,7 @@
 ## Overview
 •	Built a Windows Server 2025 domain controller in VMware.
 
-•	Practiced common help desk tasks: user accounts, groups, password resets, and account lockouts.
+•	Practiced common help desk tasks: user accounts, groups, password resets, account lockouts, account disabling.
 
 ## Environment
 •	VMware Workstation
