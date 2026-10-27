@@ -2,7 +2,7 @@
 ## Overview
 •	Built a Windows Server 2025 domain controller in VMware.
 
-•	Practiced common help desk tasks: user accounts, groups, password resets, account lockouts, and account disabling.
+•	Practiced common help desk tasks: user accounts, groups, password resets, account lockouts, account disabling, and folder access controls.
 
 ## Environment
 •	VMware Workstation
@@ -89,6 +89,28 @@
 
 <img width="797" height="596" alt="Screenshot 2026-10-26 045552" src="https://github.com/user-attachments/assets/4c147c5f-6846-4c5f-8833-a60a656dc37f" />
 
+### 8. Basic Access Controls
+
+•	Created HR, Sales, and IT folders under C:\CompanyShares.
+
+<img width="789" height="594" alt="Screenshot 2026-10-27 071546" src="https://github.com/user-attachments/assets/2ca38c97-6500-498b-88ef-15d579f3a0d6" />
+
+•	Shared each folder with Authenticated Users (Change).
+
+<img width="789" height="592" alt="Screenshot 2026-10-27 071750" src="https://github.com/user-attachments/assets/87021f89-b3d6-4e81-9c73-6cac3251c78d" />
+
+•	Disabled inheritance and removed general Users access on each folder.
+
+•	Gave each department's group (HR-Staff, Sales-Staff, IT-Staff) Modify access to its own folder.
+
+<img width="790" height="554" alt="Screenshot 2026-10-27 071854" src="https://github.com/user-attachments/assets/cc91b40b-5c7b-4811-bf91-4672f4763b35" />
+
+•	Used the Effective Access tab to confirm department users could open their folder and other users could not.
+
+<img width="788" height="593" alt="Screenshot 2026-10-27 071917" src="https://github.com/user-attachments/assets/791b0848-545b-4cf8-b73b-d67a58f777d6" />
+
+<img width="788" height="592" alt="Screenshot 2026-10-27 071938" src="https://github.com/user-attachments/assets/d50322c8-7ac4-4e22-bf1c-9e8ba158fd8f" />
+
 ### Takeaways
 •	Active Directory organizes users, groups, and departments in one central place.
 
@@ -100,5 +122,7 @@
 
 •	Disabling an account is safer than deleting it when someone leaves.
 
+•	Least privilege means users only get access to what they need for their job.
+
 ## Final Outcome
-I built a working Active Directory domain on Windows Server 2025 and used it to complete the accounts, and access tasks a desk technician tackle daily: creating users, managing groups, resetting passwords, enforcing a lockout policy, unlocking accounts, and disabling accounts. This lab gave me hands-on experience with the tools and workflow used in real IT support roles.
+I built a working Active Directory domain on Windows Server 2025 and used it to complete the account and access tasks a help desk technician handles every day: creating users, managing groups, resetting passwords, enforcing a lockout policy, unlocking accounts, disabling accounts, and controlling folder access with security groups. This lab gave me hands-on experience with the tools and workflow used in real IT support roles.
